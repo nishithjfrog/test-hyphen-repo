@@ -1,0 +1,37 @@
+templateRepository:
+  # scm integration name
+  gitProvider: github_nishith
+
+  # repository path where your templates are present
+  path: nishithjfrog/test-hyphen-repo
+
+  # branch name or pattern where your templates are present in the repository (optional)
+  branch: master
+
+  # template folder location, where your templateDefinition.yml file is present
+  templateFolder: templates/templateName
+
+  # when set to true and branch is also defined, then auto triggers the publish pipeline upon commit. (optional)
+  autoPublishOnTemplateChange: true
+ 
+publishTemplate:
+  # Template namespace
+  namespace: jfrog_name_space
+
+  # Template name
+  name: myPipelineTemplate
+
+  # Template version
+  version: 0.0.1
+
+  # name of the pipeline (optional)
+  pipelineName: PublishTemplate
+
+  # template repository resource name (optional)
+  templateRepositoryResourceName: templateRepository
+
+  # upload status resource name (optional)
+  templateUploadStatusResourceName: templateUploadStatus
+
+  # JFrog platform access token integration name
+  jfrogAccessTokenIntegration: myJfrogAccessToken
