@@ -13,7 +13,7 @@ resources:
       path: nishithjfrog/test-hyphen-repo
       branches:
         # Specifies which branches will trigger dependent steps
-        include: master
+        include: main
 
 pipelines:
   - name: my_first_pipeline
